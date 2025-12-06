@@ -16,11 +16,11 @@ public class AddEmployeePage extends CommonMethods {
     @FindBy(xpath = "//*[@name='lastName']")
     public WebElement lastNameLoc;
 
-    // Stable Employee ID locator
+    
     @FindBy(xpath = "//label[text()='Employee Id']/parent::div/following-sibling::div//input")
     public WebElement employeeId;
 
-    // Required field error under First Name
+
     @FindBy(xpath = "//input[@name='firstName']/ancestor::div[contains(@class,'oxd-input-group')]//span")
     public WebElement firstNameError;
 
