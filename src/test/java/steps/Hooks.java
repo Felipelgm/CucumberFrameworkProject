@@ -17,7 +17,7 @@ public class Hooks extends CommonMethods {
 
         byte[] pic = null;
 
-        // take screenshot only if the driver is still alive
+
         try {
             if (scenario.isFailed()) {
                 pic = takeScreenshot("failed/" + scenario.getName());
@@ -31,11 +31,11 @@ public class Hooks extends CommonMethods {
             System.out.println("Could not take screenshot: " + e.getMessage());
         }
 
-        // safely close browser without throwing invalid session errors
+
         try {
             if (driver != null) {
                 driver.quit();
-                driver = null; // prevent stale/invalid session
+                driver = null;
             }
         } catch (Exception e) {
             System.out.println("Could not quit driver: " + e.getMessage());

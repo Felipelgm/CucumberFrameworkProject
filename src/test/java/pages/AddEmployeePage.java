@@ -16,7 +16,7 @@ public class AddEmployeePage extends CommonMethods {
     @FindBy(xpath = "//*[@name='lastName']")
     public WebElement lastNameLoc;
 
-    
+
     @FindBy(xpath = "//label[text()='Employee Id']/parent::div/following-sibling::div//input")
     public WebElement employeeId;
 

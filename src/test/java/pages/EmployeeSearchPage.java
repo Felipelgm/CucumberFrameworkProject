@@ -18,11 +18,11 @@ public class EmployeeSearchPage extends CommonMethods {
     @FindBy(xpath = "(//*[@class='oxd-autocomplete-text-input oxd-autocomplete-text-input--active']/input)[1]")
     public WebElement empNameSearchField;
 
-    // locator for Employee Id field on EMPLOYEE LIST page
+
     public By empListEmployeeIdField =
             By.xpath("//label[text()='Employee Id']/../following-sibling::div//input");
 
-    // locator for Search button on EMPLOYEE LIST page
+
     public By empListSearchButton =
             By.xpath("//*[@class='oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space']");
 
